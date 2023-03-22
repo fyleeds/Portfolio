@@ -67,19 +67,25 @@
             <div id="banner" class="
             m-0 
             bg-blue-300 bg-opacity-30
-            flex-grow flex flex-row
+            flex-wrap flex flex-row
             h-auto
-            w-auto
+            w-full
             items-center
             py-20
             px-4
             justify-between"
             >
+
+                <div id="pfp"  class="flex items-center justify-center  ">
+                    <img src="/frontend/src/pics/pfp.jpg" class=" 
+                    rounded-full w-1/2 h-1/2
+                    " alt="">
+                </div>
                 <div id="title" class="
                 flex flex-col
                 h-auto
-                w-auto
-                items-start
+                w-auto grow
+                items-start justify-center
                 ">
                     <h1 class="
                     font-yanice
@@ -98,11 +104,7 @@
                     >je recherche un stage dans le développement web.</h1>
 
                 </div>
-                <div id="pfp"  class="flex items-center  ">
-                    <img src="/frontend/src/pics/pfp.jpg" class=" 
-                    rounded-full w-1/2 h-1/2
-                    " alt="">
-                </div>
+                
             </div>
         </div>
 
@@ -122,21 +124,22 @@
 
                     <ul id="gridInfos" class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 3xl:grid-cols-4
                     gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8
-                    auto-cols-min auto-rows-min
-                    h-full
+                    
+                    h-full w-full
                     rounded-lg
-                    shadow-sm mx-20
+                    shadow-sm mx-0 sm:mx-0
                     
                     ">
                                 
 
                         <a href="http://193.70.84.127:8080/" id="AlsaceContainer" class="
-                            h-auto flex items-center group hover:border-white 
+                            h-auto w-full flex items-center group hover:border-white 
                             pb-8 border-b-4 border-gray-600 rounded-b
                              
                             ">
 
                                 <button id="alsaceButton" class="
+                                w-full
                                 rounded-lg h-full flex flex-col justify-between items-center
                                 focus:ring-4 focus:outline-none focus:ring-cyan-500 
                                 bg-orange-500 bg-opacity-70 hover:bg-opacity-100 grow 
