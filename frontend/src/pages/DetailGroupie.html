@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
-<html>
+<html class="h-screen w-screen">
+
 <head>
-	<title>Detail Artist</title>
+	<title>Detail Site Groupie Tracker</title>
 	<link rel="stylesheet" href="/frontend/src/css/output.css">
 </head>
 
 <body class="
-h-screen w-screen
+h-screen w-full
 flex flex-col 
 items-center 
 bg-gray-400
-overflow-scroll overflow-y-auto 
+overflow-x-hidden
  ">
 
 	<div id="topper" class="
@@ -19,7 +20,9 @@ overflow-scroll overflow-y-auto
 	rounded-lg 
 	shadow 
 	flex 
-	w-full
+	xs:w-full
+	sm:w-full
+	w-5/6
 	items-center
 	justify-between 
 	
@@ -28,15 +31,16 @@ overflow-scroll overflow-y-auto
 	">
 
 		<div class="flex flex-row space-x-2">
-		<img src="/frontend/src/pics/pfp.jpg" class="h-1/12 w-1/12 rounded-full  mr-3" alt="Logo" />
-		
 
-		<span class="
-		text-gray-700 text-2xl
-		sm:text-center 
-		py-1 font-goldleaf"
-		>Clément Penot
-		</span>
+			<img src="/frontend/src/pics/pfp.jpg" class="h-1/12 w-1/12 rounded-full " alt="Logo" />
+			
+
+			<span class="
+			text-gray-700 text-2xl
+			sm:text-center 
+			py-1 font-goldleaf"
+			>Clément Penot
+			</span>
 
 		</div>
 
@@ -44,16 +48,13 @@ overflow-scroll overflow-y-auto
 		<a id="backButton" href="/index.html" class="
 		flex flex-row  
 		w-auto h-auto
-		hover:bg-gradient-to-bl
 		opacity-80
 		hover:opacity-100
-		hover:shadow-2xl hover:shadow-customdarkerblue
 		p-2
 		items-center
 		">
 			
 			<img class="
-			shrink-0 
 			h-10
 			w-10
 			" src="/frontend/src/pics/home.png" alt=" back icon">
@@ -61,46 +62,33 @@ overflow-scroll overflow-y-auto
 		</a>
 	</div>
 
-	<div id="wrapper" class="
+	<div id="templateWrapper" class="
 	flex flex-col h-auto w-11/12 max-h-max
     rounded
-	items-center
+	items-center  justify-center
 	space-y-4
 	m-4
-	py-2
-	bg-customdarkerblue bg-opacity-50
-	relative
+	p-2
+	
 	">
 
+		<div id="templateContainer" class="
+		p-4
+		w-auto 
+		
+			">
 
-			<div id="sub" class=
-			"bg-opacity-50 
-			h-auto w-full
-			flex justify-center
-			items-center shrink-0
-			bg-transparent  ">
-
-
-				<ul class="grid grid-cols-1
-				gap-y-20 w-full
-				auto-cols-min 
-				rounded-lg
-				bg-blue-300 bg-opacity-30
-				p-4
-					">
-
-					<img src="/frontend/src/pics/groupie/home.png" class="w-full max-w-9xl h-max " alt="Logo" />
-					<img src="/frontend/src/pics/groupie/filterandcard.png" class="w-full max-w-9xl h-max " alt="Logo" />
-					<img src="/frontend/src/pics/groupie/cardDetails.png" class="w-full max-w-9xl h-max " alt="Logo" />
-					<img src="/frontend/src/pics/groupie/loading.png" class="w-full max-w-9xl h-max " alt="Logo" />
-					<img src="/frontend/src/pics/groupie/noResults.png" class="w-full max-w-9xl h-max " alt="Logo" />
-					<img src="/frontend/src/pics/groupie/readMe.png" class="w-full max-w-9xl h-max " alt="Logo" />
-
-				</ul>
+			<img id="picTemplate" src="/frontend/src/pics/groupie/home.png" class=" border-8 rounded-lg border-customdarkerblue border-opacity-50 w-auto max-w-1/2 h-auto mx-h-1/2 " alt="Logo" />
+			<!-- <img src="/frontend/src/pics/groupie/filterandcard.png" class="w-full max-w-9xl h-max " alt="Logo" />
+			<img src="/frontend/src/pics/groupie/cardDetails.png" class="w-full max-w-9xl h-max " alt="Logo" />
+			<img src="/frontend/src/pics/groupie/loading.png" class="w-full max-w-9xl h-max " alt="Logo" />
+			<img src="/frontend/src/pics/groupie/noResults.png" class="w-full max-w-9xl h-max " alt="Logo" />
+			<img src="/frontend/src/pics/groupie/readMe.png" class="w-full max-w-9xl h-max " alt="Logo" /> -->
 
 			</div>
 
-
-
 	</div>
+
 </body>
+
+</html>
