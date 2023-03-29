@@ -17,6 +17,7 @@
         <div id="top" class="
         shrink-0
         h-auto
+        w-full
         flex flex-wrap
         items-center
         ">
@@ -114,163 +115,160 @@
         </div>
 
         <div id="main" class = "
-        p-5
+        p-5 self-start
         flex flex-col
-        items-center
+        items-start
         justify-center
-        bg-blue-300 bg-opacity-30
-        h-auto w-auto
+        h-full w-full
         
         ">
             
 
-            <div class=" flex-1 flex flex-col  items-center bg-white space-y-12 p-4 rounded-xl h-auto w-5/6 ">
+            <div id ="projetsContainer" class=" bg-gray-400 bg-opacity-30 flex-1 flex flex-col  justify-between items-center  space-y-12 rounded-xl h-full w-full ">
 
-                <div id="numberResults" class="
-                rounded h-auto w-auto
+                <h2 id="projetsTitle" class="
+                rounded h-auto w-full bg-white 
                 px-5 border-black border-b-4 self-start
                 text-5xl text-black font-landasans">
-                Mes Projets </div>
+                Mes Projets </h2>
 
                 <ul id="gridInfos" class="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 3xl:grid-cols-4
-                gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8
-                
-                h-full w-full
+                gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8 place-items-center
+                h-auto w-auto
+                auto-cols-min auto-rows-min
                 rounded-lg
-                shadow-sm mx-0 sm:mx-0
+                mx-0 sm:mx-0
                 
                 ">
                             
 
                     <a href="http://193.70.84.127:8080/" id="AlsaceContainer" class="
-                        h-auto w-full flex items-center group hover:border-white 
-                        pb-2 border-b-4 border-gray-600 rounded-b
-                        
-                        ">
+                    h-auto w-auto flex items-center group hover:border-white 
+                    pb-2 border-b-4 border-gray-600 rounded-b
+                    
+                    ">
 
-                            <button id="alsaceButton" class="
-                            w-full
-                            rounded-lg h-auto flex flex-col justify-between items-center
-                            focus:ring-4 focus:outline-none focus:ring-cyan-500 
-                            bg-orange-500 bg-opacity-70 hover:bg-opacity-100 grow 
-                            shadow-lg shadow-black
-                            group-hover:shadow-sm ">
+                        <button id="alsaceButton" class="
+                        w-full h-full
+                        rounded-lg flex flex-col justify-between items-center
+                        bg-orange-500 bg-opacity-70 hover:bg-opacity-100 grow 
+                        shadow-lg shadow-black
+                        group-hover:shadow-sm ">
 
-                                <div id="TechnoAlsaceContainer" class="
-                                flex
-                                rounded flex-row h-max w-full
-                                items-center space-x-4 py-2 px-4 justify-evenly bg-opacity-30 bg-white
+                            <div id="TechnoAlsaceContainer" class="
+                            hidden flex
+                            rounded flex-row h-max w-full
+                            items-center space-x-4 py-2 px-4 justify-evenly bg-opacity-30 bg-white
+                            ">
+
+                            <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
+                            <img id="jsLogo" src="/frontend/src/pics/JavaScript-logo.png" class="w-6 h-6">
+                            <img id="tailwindLogo" src="/frontend/src/pics/Tailwind_CSS_Logo.svg.png" class="w-6 h-6">
+                            <img id="htmlLogo" src="/frontend/src/pics/HTML5_logo_and_wordmark.svg.png" class="w-6 h-6">
+                            <img id="sqlLogo" src="/frontend/src/pics/sql-server.png" class="w-8 h-8">
+
+                            </div>
+
+                            <div id="picsAndTitleAlsace" type="submit" value="submit" name="submit"
+                            class="py-8 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
+
+                            ">
+                                <img src="/frontend/src/pics/alsacegray.png" class="w-12 h-12 " alt="Logo" />
+                                
+                                <span class="
+                                text-black text-3xl
+                                font-goldleaf
+                                
+                                "
+                                >Alsace Forum
+                                </span>
+
+                            </div>
+
+                            <div id="descriptionAlsaceContainer" 
+                            class=" hidden py-2 pl-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
+                            bg-opacity-30 bg-white
+                            ">
+
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
                                 ">
 
-                                <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
-                                <img id="jsLogo" src="/frontend/src/pics/JavaScript-logo.png" class="w-6 h-6">
-                                <img id="tailwindLogo" src="/frontend/src/pics/Tailwind_CSS_Logo.svg.png" class="w-6 h-6">
-                                <img id="htmlLogo" src="/frontend/src/pics/HTML5_logo_and_wordmark.svg.png" class="w-6 h-6">
-                                <img id="sqlLogo" src="/frontend/src/pics/sql-server.png" class="w-8 h-8">
-
-                                </div>
-
-                                <div id="picsAndTitleAlsace" type="submit" value="submit" name="submit"
-                                class="py-8 flex flex-row items-center justify-center space-x-2 w-full h-auto
-
-                                ">
-                                    <img src="/frontend/src/pics/alsacegray.png" class="w-12 h-12 " alt="Logo" />
-                                    
+                                    <img src="/frontend/src/pics/user.png" class="w-8 h-8 " alt="Logo" />
                                     <span class="
-                                    text-black text-3xl
-                                    font-goldleaf
-                                    
-                                    "
-                                    >Alsace Forum
+                                        text-black text-xl
+                                        font-goldleaf
+                                        "
+                                        >- Communication Utilisateurs
                                     </span>
 
                                 </div>
 
-                                <div id="descriptionAlsaceContainer" type="submit" value="submit" name="submit"
-                                class="py-2 pl-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
-                                bg-opacity-30 bg-white
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
                                 ">
 
-                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                    ">
+                                    <img src="/frontend/src/pics/post.png" class="w-8 h-8  " alt="Logo" />
 
-                                        <img src="/frontend/src/pics/user.png" class="w-8 h-8 " alt="Logo" />
-                                        <span class="
-                                            text-black text-xl
-                                            font-goldleaf
-                                            "
-                                            >- Communication Utilisateurs
-                                        </span>
-
-                                    </div>
-
-                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                    ">
-
-                                        <img src="/frontend/src/pics/post.png" class="w-8 h-8  " alt="Logo" />
-
-                                        <span class="
-                                        text-black text-xl
-                                        font-goldleaf
-                                        "
-                                        >- Associer catégories avec postes
-                                        </span>
-
-                                    </div>
-
-                                
-                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                    ">
-
-                                        <img src="/frontend/src/pics/heartBlack.png" class="w-8 h-8  " alt="Logo" />
-
-                                        <span class="
-                                        text-black text-xl
-                                        font-goldleaf
-                                        "
-                                        >- Like et dislike
-                                        </span>
-
-                                    </div>
-                                    
-                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                    ">
-
-                                        <img src="/frontend/src/pics/filtres.png" class="w-8 h-8 " alt="Logo" />
-
-                                        <span class="
-                                            text-black text-xl
-                                            font-goldleaf
-                                            "
-                                            >- Filtrage de posts
-                                        </span>
-
-                                    </div>
+                                    <span class="
+                                    text-black text-xl
+                                    font-goldleaf
+                                    "
+                                    >- Associer catégories avec postes
+                                    </span>
 
                                 </div>
 
-                            </button>
+                            
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                ">
+
+                                    <img src="/frontend/src/pics/heartBlack.png" class="w-8 h-8  " alt="Logo" />
+
+                                    <span class="
+                                    text-black text-xl
+                                    font-goldleaf
+                                    "
+                                    >- Like et dislike
+                                    </span>
+
+                                </div>
+                                
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                ">
+
+                                    <img src="/frontend/src/pics/filtres.png" class="w-8 h-8 " alt="Logo" />
+
+                                    <span class="
+                                        text-black text-xl
+                                        font-goldleaf
+                                        "
+                                        >- Filtrage de posts
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </button>
                     </a>
     
                     
                     <a href="/Groupie" id="GroupieContainer" class="
                         h-auto flex justify-center items-center group hover:border-white 
-                        pb-8 border-b-4 border-gray-600 rounded-b 
+                        pb-2 border-b-4 border-gray-600 rounded-b 
                             
                         ">
 
                             <button id="groupieButton" class="
-                            rounded-lg h-full flex flex-col justify-between items-center
-                            focus:ring-4 focus:outline-none focus:ring-cyan-500 
+                            rounded-lg w-full h-full flex flex-col justify-between items-center
                             bg-blue-300 bg-opacity-70 grow hover:bg-opacity-100
                             shadow-lg shadow-black group-hover:shadow-sm ">
 
                                 <div id="TechnoGroupieContainer" class="
-                                flex
+                                hidden flex
                                 rounded flex-row h-max w-full
                                 items-center space-x-4 py-2 px-4 justify-evenly bg-opacity-30 bg-white
                                 ">
@@ -284,16 +282,16 @@
                                 </div>
 
                                 <div id="picsAndTitleGroupie" type="submit" value="submit" name="submit"
-                                class="py-20 mb-8 flex flex-row items-center justify-center space-x-4 w-full h-auto
+                                class="py-8 flex px-2 flex-row items-center justify-center space-x-2 w-auto h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/song.png" class="w-12 h-12 " alt="Logo" />
+                                    <img src="/frontend/src/pics/song.png" class="w-10 h-10 " alt="Logo" />
 
                                     <span class="
-                                    text-black text-6xl
+                                    text-black text-3xl
                                     font-uniser
-                                    
+                                    grow
                                     "
                                     >Groupie Tracker
                                     </span>
@@ -301,8 +299,8 @@
                                 </div>
 
                                 <div id="descriptionGroupieContainer" type="submit" value="submit" name="submit"
-                                class="py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
-
+                                class="hidden py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
+                                bg-opacity-30 bg-white
                                 ">
 
                                     <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
@@ -342,18 +340,17 @@
 
                     <a id="GameContainer" class="
                         h-auto flex justify-center items-center group hover:border-white 
-                        pb-8 border-b-4 border-gray-600 rounded-b
+                        pb-2 border-b-4 border-gray-600 rounded-b
                             
                         ">
 
                             <button id="gameButton" class="
-                            rounded-lg h-full flex flex-col justify-between items-center
-                            focus:ring-4 focus:outline-none focus:ring-cyan-500 
+                            rounded-lg w-full h-full flex flex-col justify-between items-center
                             bg-blue-900 bg-opacity-70 grow hover:bg-opacity-100
                             shadow-lg shadow-black group-hover:shadow-sm">
 
                                 <div id="TechnoGameContainer" class="
-                                flex
+                                hidden flex
                                 rounded flex-row h-max w-full 
                                 items-center space-x-4 py-1 px-4 justify-evenly bg-opacity-30 bg-white
                                 ">
@@ -366,14 +363,14 @@
 
 
                                 <div id="picsAndTitleGame" type="submit" value="submit" name="submit"
-                                class="py-20 flex flex-row items-center justify-center space-x-4 w-full h-auto
+                                class="py-8 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/game-controller.png" class="w-12 h-12 " alt="Logo" />
+                                    <img src="/frontend/src/pics/game-controller.png" class="w-10 h-10 " alt="Logo" />
 
                                     <span class="
-                                    text-black text-5xl
+                                    text-black text-3xl
                                     font-ubuntu
                                     
                                     "
@@ -385,7 +382,7 @@
                                 
                                 
                                 <div id="descriptionGameContainer" type="submit" value="submit" name="submit"
-                                class="py-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
+                                class="hidden py-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
 
                                 ">
                                     
@@ -431,18 +428,18 @@
 
                     <a href="/Login" id="LoginContainer" class="
                     h-auto flex justify-center items-center group hover:border-white 
-                    pb-8 border-b-4 border-gray-600 rounded-b
+                    pb-2 border-b-4 border-gray-600 rounded-b
                         
                     ">
 
                         <button id="loginButton" class="
-                        rounded-lg h-full flex flex-col items-center justify-between
+                        rounded-lg w-full h-full flex flex-col items-center justify-between
                         focus:ring-4 focus:outline-none focus:ring-cyan-500 
                         bg-green-700 bg-opacity-70 hover:bg-opacity-100 grow 
                         shadow-lg shadow-black group-hover:shadow-sm ">
 
                             <div id="TechnoLoginContainer" class="
-                            flex
+                            hidden flex
                             rounded flex-row h-max w-full
                             items-center space-x-4 py-1 px-4 justify-evenly bg-opacity-30 bg-white
                             ">
@@ -454,14 +451,14 @@
                             </div>
 
                             <div id="picsAndTitleLogin" type="submit" value="submit" name="submit"
-                            class="py-20 mb-4 flex flex-row items-center justify-center space-x-4 w-full h-auto
+                            class="py-8 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
 
                             ">
 
-                                <img src="/frontend/src/pics/editgray.png" class="w-12 h-12 " alt="Logo" />
+                                <img src="/frontend/src/pics/editgray.png" class="w-10 h-10 " alt="Logo" />
 
                                 <span class="
-                                text-black text-5xl
+                                text-black text-3xl
                                 font-secular
                                 
                                 "
@@ -471,7 +468,7 @@
                             </div>
 
                             <div id="descriptionLoginContainer" type="submit" value="submit" name="submit"
-                                class="py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
+                                class="hidden py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
 
                                 ">
 

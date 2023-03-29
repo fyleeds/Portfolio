@@ -585,6 +585,10 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-screen{
   height: 100vh;
 }
@@ -637,6 +641,10 @@ video {
 .max-h-max{
   max-height: -moz-max-content;
   max-height: max-content;
+}
+
+.max-h-20{
+  max-height: 5rem;
 }
 
 .w-screen{
@@ -1063,6 +1071,11 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .pb-8{
