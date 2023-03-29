@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/frontend/src/css/output.css">
 </head>
 
-<body class="h-screen overflow-hidden bg-title bg-center bg-no-repeat bg-cover bg-opacity-30 ">
+<body class=" overflow-hidden h-screen bg-title bg-center bg-,o-repeat bg-cover bg-opacity-30 ">
 
     <div id="topper" class="
             z-10
@@ -59,100 +59,210 @@
 
     </div>
 
-    <div id="wrapper" class="
-    absolute top-14 bg-gray-600 bg-opacity-40
-    w-full h-full 
-    flex flex-row space-x-32 items-center justify-center
-    
-    "> 
-        
-        <div id="banner" class="
-        m-0 shrink-0
-        flex-col flex 
-        h-5/6 
-        w-1/4 border-r-8 border-white border-opacity-50
-        items-center
-        justify-start"
-        >
+    <div id="sidebarLeft" class="
+    fixed top-14 left-0
+    flex-col flex 
+    h-full 
+    w-1/4 
+    items-center
+    justify-start"
+    >
 
-            <div id="pfp"  class=" h-1/2 w-1/2 flex items-center justify-center  ">
-                <img src="/frontend/src/pics/pfp.jpg" class=" 
-                rounded-full
-                " alt="pfp">
-            </div>
-
-            <div id="title" class="
-            flex flex-col
-            h-auto
-            w-auto
-            items-center justify-center
-            ">
-                <h1 class="
-                font-yanice
-                text-8xl 
-                text-center
-                text-gray-200
-                p-2
-                "
-                >CLEMENT PENOT,</h1>
-                
-                <h1 class="
-                font-secular
-                text-4xl 
-                text-gray-200
-                text-center
-                p-2
-                "
-                >je recherche un stage dans le développement web.</h1>
-
-            </div>
-            
+        <div id="pfp"  class=" h-1/2 w-1/2 flex items-center justify-center  ">
+            <img src="/frontend/src/pics/pfp.jpg" class=" 
+            rounded-full
+            " alt="pfp">
         </div>
 
-
-        <div id="main" class = "
-        p-5
+        <div id="title" class="
         flex flex-col
-        items-center
-        justify-center
-        h-5/6 w-3/4
-        
+        h-auto
+        w-auto
+        items-center justify-center
         ">
+            <h1 class="
+            font-yanice
+            text-8xl 
+            text-center
+            text-gray-200
+            p-2
+            "
+            >CLEMENT PENOT,</h1>
             
-            <div id ="projetsContainer" class=" shadow-xl bg-gray-400 bg-opacity-40 flex flex-col justify-between items-center  space-y-12 rounded-xl h-full w-full ">
+            <h1 class="
+            font-secular
+            text-4xl 
+            text-gray-200
+            text-center
+            p-2
+            "
+            >je recherche un stage dans le développement web.</h1>
 
-                <h2 id="projetsTitle" class="
-                rounded-t-xl h-auto w-full bg-gray-400 bg-opacity-50
-                px-5  pb-4 border-opacity-50 border-b-4 self-start
-                text-9xl text-gray-700 font-landasans">
-                Mes Projets </h2>
+        </div>
+        
+    </div>
+
+    <div id="wrapper" class="
+    absolute top-14 right-0 bg-gray-600 bg-opacity-40
+    w-3/4 h-full p-5 overflow-auto 
+    "> 
+
+        <div id ="projetsContainer" class="shadow-xl  flex flex-col justify-start items-center rounded-xl h-full w-full ">
+
+            <div id="informationsContainer" class="flex justify-between items-start border-opacity-50 border-b-4 flex-row w-full bg-gray-400 bg-opacity-50">
+            <h2 id="projetsTitle" class="
+            h-auto w-full 
+            px-5  pb-4 
+            text-9xl text-gray-900 font-landasans">
+            Mes Projets </h2>
+
+            <h4 id="numberResults" class="
+            shrink-0
+            pr-2
+            h-auto w-auto self-end
+            text-2xl text-black font-landasans">
+            4 projets ( 1 online) </h4>
+
+            </div>
+            
+            <div id="gridContainer" class=" pb-32 bg-gray-400 bg-opacity-40 w-full flex items-start justify-center pt-12 h-auto ">
+
+                <ul id="gridInfos" class=" grid grid-cols-1
+                gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8 place-items-center
+                h-auto  w-5/6
+                auto-cols-min auto-rows-min
+                rounded-lg
+                mx-0 sm:mx-0
                 
-                <div id="gridContainer" class=" overflow-auto w-full flex items-start justify-center h-auto ">
+                ">
+                            
 
-                    <ul id="gridInfos" class=" grid grid-cols-1
-                    gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8 place-items-center
-                    h-auto  w-5/6
-                    auto-cols-min auto-rows-min
-                    rounded-lg
-                    mx-0 sm:mx-0
+                    <a href="http://193.70.84.127:8080/" id="AlsaceContainer" class="
+                    h-auto w-full flex items-center group hover:border-white 
+                    pb-2 border-b-4 border-gray-600 rounded-b
                     
                     ">
-                                
 
-                        <a href="http://193.70.84.127:8080/" id="AlsaceContainer" class="
-                        h-auto w-full flex items-center group hover:border-white 
-                        pb-2 border-b-4 border-gray-600 rounded-b
-                        
+                        <button id="alsaceButton" class="
+                        w-full h-full
+                        rounded-lg flex flex-col justify-between items-center
+                        bg-orange-500 opacity-90 grow 
+                        shadow-lg shadow-black
+                        group-hover:shadow-sm ">
+
+                            <div id="TechnoAlsaceContainer" class="
+                            flex
+                            rounded flex-row h-max w-full
+                            items-center space-x-4 py-2 px-4 justify-evenly bg-opacity-30 bg-white
+                            ">
+
+                            <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
+                            <img id="jsLogo" src="/frontend/src/pics/JavaScript-logo.png" class="w-6 h-6">
+                            <img id="tailwindLogo" src="/frontend/src/pics/Tailwind_CSS_Logo.svg.png" class="w-6 h-6">
+                            <img id="htmlLogo" src="/frontend/src/pics/HTML5_logo_and_wordmark.svg.png" class="w-6 h-6">
+                            <img id="sqlLogo" src="/frontend/src/pics/sql-server.png" class="w-8 h-8">
+
+                            </div>
+
+                            <div id="picsAndTitleAlsace" type="submit" value="submit" name="submit"
+                            class="py-20 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
+
+                            ">
+                                <img src="/frontend/src/pics/alsacegray.png" class="w-20 h-20 " alt="Logo" />
+                                
+                                <span class="
+                                text-black text-6xl
+                                font-goldleaf
+                                
+                                "
+                                >Alsace Forum
+                                </span>
+
+                            </div>
+
+                            <div id="descriptionAlsaceContainer" 
+                            class="  py-2 pl-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
+                            bg-opacity-30 bg-white
+                            ">
+
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                ">
+
+                                    <img src="/frontend/src/pics/user.png" class="w-8 h-8 " alt="Logo" />
+                                    <span class="
+                                        text-black text-xl
+                                        font-goldleaf
+                                        "
+                                        >- Communication Utilisateurs
+                                    </span>
+
+                                </div>
+
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                ">
+
+                                    <img src="/frontend/src/pics/post.png" class="w-8 h-8  " alt="Logo" />
+
+                                    <span class="
+                                    text-black text-xl
+                                    font-goldleaf
+                                    "
+                                    >- Associer catégories avec postes
+                                    </span>
+
+                                </div>
+
+                            
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                ">
+
+                                    <img src="/frontend/src/pics/heartBlack.png" class="w-8 h-8  " alt="Logo" />
+
+                                    <span class="
+                                    text-black text-xl
+                                    font-goldleaf
+                                    "
+                                    >- Like et dislike
+                                    </span>
+
+                                </div>
+                                
+                                <div id="picsAndTitleUser" 
+                                class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                ">
+
+                                    <img src="/frontend/src/pics/filtres.png" class="w-8 h-8 " alt="Logo" />
+
+                                    <span class="
+                                        text-black text-xl
+                                        font-goldleaf
+                                        "
+                                        >- Filtrage de posts
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+                    </a>
+    
+                    
+                    <a href="/Groupie" id="GroupieContainer" class="
+                        h-auto w-full flex justify-center items-center group hover:border-white 
+                        pb-2 border-b-4 border-gray-600 rounded-b 
+                            
                         ">
 
-                            <button id="alsaceButton" class="
-                            w-full h-full
-                            rounded-lg flex flex-col justify-between items-center
-                            bg-orange-500 opacity-90 grow 
-                            shadow-lg shadow-black
-                            group-hover:shadow-sm ">
+                            <button id="groupieButton" class="
+                            rounded-lg w-full h-full flex flex-col justify-between items-center
+                            bg-blue-300 grow opacity-90
+                            shadow-lg shadow-black group-hover:shadow-sm ">
 
-                                <div id="TechnoAlsaceContainer" class="
+                                <div id="TechnoGroupieContainer" class="
                                 flex
                                 rounded flex-row h-max w-full
                                 items-center space-x-4 py-2 px-4 justify-evenly bg-opacity-30 bg-white
@@ -161,88 +271,59 @@
                                 <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
                                 <img id="jsLogo" src="/frontend/src/pics/JavaScript-logo.png" class="w-6 h-6">
                                 <img id="tailwindLogo" src="/frontend/src/pics/Tailwind_CSS_Logo.svg.png" class="w-6 h-6">
-                                <img id="htmlLogo" src="/frontend/src/pics/HTML5_logo_and_wordmark.svg.png" class="w-6 h-6">
-                                <img id="sqlLogo" src="/frontend/src/pics/sql-server.png" class="w-8 h-8">
+                                <img id="tailwindLogo" src="/frontend/src/pics/HTML5_logo_and_wordmark.svg.png" class="w-6 h-6">
+
 
                                 </div>
 
-                                <div id="picsAndTitleAlsace" type="submit" value="submit" name="submit"
-                                class="py-20 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
+                                <div id="picsAndTitleGroupie" type="submit" value="submit" name="submit"
+                                class="py-20 flex px-2 flex-row items-center justify-center space-x-4 w-auto h-auto
 
                                 ">
-                                    <img src="/frontend/src/pics/alsacegray.png" class="w-20 h-20 " alt="Logo" />
-                                    
+
+                                    <img src="/frontend/src/pics/song.png" class="w-20 h-20 " alt="Logo" />
+
                                     <span class="
                                     text-black text-6xl
-                                    font-goldleaf
-                                    
+                                    font-uniser
+                                    grow
                                     "
-                                    >Alsace Forum
+                                    >Groupie Tracker
                                     </span>
 
                                 </div>
 
-                                <div id="descriptionAlsaceContainer" 
-                                class="  py-2 pl-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
+                                <div id="descriptionGroupieContainer" type="submit" value="submit" name="submit"
+                                class=" py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
                                 bg-opacity-30 bg-white
                                 ">
 
-                                    <div id="picsAndTitleUser" 
-                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                    ">
-
-                                        <img src="/frontend/src/pics/user.png" class="w-8 h-8 " alt="Logo" />
-                                        <span class="
-                                            text-black text-xl
-                                            font-goldleaf
-                                            "
-                                            >- Communication Utilisateurs
-                                        </span>
-
-                                    </div>
-
-                                    <div id="picsAndTitleUser" 
+                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
                                     class="flex flex-row items-start justify-start space-x-2 w-full h-auto
                                     ">
 
                                         <img src="/frontend/src/pics/post.png" class="w-8 h-8  " alt="Logo" />
 
                                         <span class="
-                                        text-black text-xl
-                                        font-goldleaf
+                                        text-black text-2xl
+                                        font-uniser
                                         "
-                                        >- Associer catégories avec postes
-                                        </span>
-
-                                    </div>
-
-                                
-                                    <div id="picsAndTitleUser" 
-                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                    ">
-
-                                        <img src="/frontend/src/pics/heartBlack.png" class="w-8 h-8  " alt="Logo" />
-
-                                        <span class="
-                                        text-black text-xl
-                                        font-goldleaf
-                                        "
-                                        >- Like et dislike
+                                        >- Chercher des artistes dans une API
                                         </span>
 
                                     </div>
                                     
-                                    <div id="picsAndTitleUser" 
+                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
                                     class="flex flex-row items-start justify-start space-x-2 w-full h-auto
                                     ">
 
                                         <img src="/frontend/src/pics/filtres.png" class="w-8 h-8 " alt="Logo" />
 
                                         <span class="
-                                            text-black text-xl
-                                            font-goldleaf
+                                            text-black text-2xl
+                                            font-uniser
                                             "
-                                            >- Filtrage de posts
+                                            >- Filtrage d'artistes
                                         </span>
 
                                     </div>
@@ -250,278 +331,186 @@
                                 </div>
 
                             </button>
-                        </a>
-        
-                        
-                        <a href="/Groupie" id="GroupieContainer" class="
-                            h-auto w-full flex justify-center items-center group hover:border-white 
-                            pb-2 border-b-4 border-gray-600 rounded-b 
-                                
-                            ">
+                    </a>
 
-                                <button id="groupieButton" class="
-                                rounded-lg w-full h-full flex flex-col justify-between items-center
-                                bg-blue-300 grow opacity-90
-                                shadow-lg shadow-black group-hover:shadow-sm ">
-
-                                    <div id="TechnoGroupieContainer" class="
-                                    flex
-                                    rounded flex-row h-max w-full
-                                    items-center space-x-4 py-2 px-4 justify-evenly bg-opacity-30 bg-white
-                                    ">
-
-                                    <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
-                                    <img id="jsLogo" src="/frontend/src/pics/JavaScript-logo.png" class="w-6 h-6">
-                                    <img id="tailwindLogo" src="/frontend/src/pics/Tailwind_CSS_Logo.svg.png" class="w-6 h-6">
-                                    <img id="tailwindLogo" src="/frontend/src/pics/HTML5_logo_and_wordmark.svg.png" class="w-6 h-6">
-
-
-                                    </div>
-
-                                    <div id="picsAndTitleGroupie" type="submit" value="submit" name="submit"
-                                    class="py-20 flex px-2 flex-row items-center justify-center space-x-4 w-auto h-auto
-
-                                    ">
-
-                                        <img src="/frontend/src/pics/song.png" class="w-20 h-20 " alt="Logo" />
-
-                                        <span class="
-                                        text-black text-6xl
-                                        font-uniser
-                                        grow
-                                        "
-                                        >Groupie Tracker
-                                        </span>
-
-                                    </div>
-
-                                    <div id="descriptionGroupieContainer" type="submit" value="submit" name="submit"
-                                    class=" py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
-                                    bg-opacity-30 bg-white
-                                    ">
-
-                                        <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                        class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                        ">
-
-                                            <img src="/frontend/src/pics/post.png" class="w-8 h-8  " alt="Logo" />
-
-                                            <span class="
-                                            text-black text-2xl
-                                            font-uniser
-                                            "
-                                            >- Chercher des artistes dans une API
-                                            </span>
-
-                                        </div>
-                                        
-                                        <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                        class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                        ">
-
-                                            <img src="/frontend/src/pics/filtres.png" class="w-8 h-8 " alt="Logo" />
-
-                                            <span class="
-                                                text-black text-2xl
-                                                font-uniser
-                                                "
-                                                >- Filtrage d'artistes
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                </button>
-                        </a>
-
-                        <a id="GameContainer" class="
-                            h-auto w-full flex justify-center items-center group hover:border-white 
-                            pb-2 border-b-4 border-gray-600 rounded-b
-                                
-                            ">
-
-                                <button id="gameButton" class="
-                                rounded-lg w-full h-full flex flex-col justify-between items-center
-                                bg-blue-900 grow opacity-90
-                                shadow-lg shadow-black group-hover:shadow-sm">
-
-                                    <div id="TechnoGameContainer" class="
-                                    flex
-                                    rounded flex-row h-max w-full 
-                                    items-center space-x-4 py-1 px-4 justify-evenly bg-opacity-30 bg-white
-                                    ">
-
-                                    <img id="javaLogo" src="/frontend/src/pics/java-logo.png" class="w-8 h-8">
-                                    <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
-
-
-                                    </div>
-
-
-                                    <div id="picsAndTitleGame" type="submit" value="submit" name="submit"
-                                    class="py-20 px-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
-
-                                    ">
-
-                                        <img src="/frontend/src/pics/game-controller.png" class="w-20 h-20 " alt="Logo" />
-
-                                        <span class="
-                                        text-black text-6xl
-                                        font-ubuntu
-                                        
-                                        "
-                                        >Games
-                                        </span>
-
-                                    </div>
-
-                                    
-                                    
-                                    <div id="descriptionGameContainer" type="submit" value="submit" name="submit"
-                                    class=" py-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
-
-                                    ">
-                                        
-                                        <div id="picsAndTitleRace" type="submit" value="submit" name="submit"
-                                        class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-
-                                        ">
-
-                                            <img src="/frontend/src/pics/flag.png" class="w-12 h-12 " alt="Logo" />
-
-                                            <span class="
-                                            text-black text-base
-                                            font-ubuntu
-                                            
-                                            "
-                                            >Race Game en Java (notions de POO)
-                                            </span>
-                                        </div>
-
-                                        <div id="picsAndTitleHangman" type="submit" value="submit" name="submit"
-                                        class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-
-                                        ">
-
-                                            <img src="/frontend/src/pics/hangman.png" class="w-12 h-12 " alt="Logo" />
-
-                                            <span class="
-                                            text-black text-base
-                                            font-ubuntu
-                                            "
-                                            >Hangman en Golang
-                                            </span>
-
-                                        </div>
-
-
-
-                                    </div>
-                                    
-
-                                </button>
-                        </a>
-
-                        <a href="/Login" id="LoginContainer" class="
+                    <a id="GameContainer" class="
                         h-auto w-full flex justify-center items-center group hover:border-white 
                         pb-2 border-b-4 border-gray-600 rounded-b
                             
                         ">
 
-                            <button id="loginButton" class="
-                            rounded-lg w-full h-full flex flex-col items-center justify-between
-                            focus:ring-4 focus:outline-none focus:ring-cyan-500 
-                            bg-green-700 opacity-90 grow 
-                            shadow-lg shadow-black group-hover:shadow-sm ">
+                            <button id="gameButton" class="
+                            rounded-lg w-full h-full flex flex-col justify-between items-center
+                            bg-blue-900 grow opacity-90
+                            shadow-lg shadow-black group-hover:shadow-sm">
 
-                                <div id="TechnoLoginContainer" class="
+                                <div id="TechnoGameContainer" class="
                                 flex
-                                rounded flex-row h-max w-full
+                                rounded flex-row h-max w-full 
                                 items-center space-x-4 py-1 px-4 justify-evenly bg-opacity-30 bg-white
                                 ">
 
-                                <img id="javaLogo" src="/frontend/src/pics/Qt_logo_2016.svg.png" class="w-8 h-8">
-                                <img id="sqlLogo" src="/frontend/src/pics/sql-server.png" class="w-8 h-8">
+                                <img id="javaLogo" src="/frontend/src/pics/java-logo.png" class="w-8 h-8">
+                                <img id="golangLogo" src="/frontend/src/pics/1200px-Go_Logo_Blue.svg.png" class="w-10 h-4">
 
 
                                 </div>
 
-                                <div id="picsAndTitleLogin" type="submit" value="submit" name="submit"
+
+                                <div id="picsAndTitleGame" type="submit" value="submit" name="submit"
                                 class="py-20 px-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/editgray.png" class="w-20 h-20 " alt="Logo" />
+                                    <img src="/frontend/src/pics/game-controller.png" class="w-20 h-20 " alt="Logo" />
 
                                     <span class="
                                     text-black text-6xl
-                                    font-secular
+                                    font-ubuntu
                                     
                                     "
-                                    >Login
+                                    >Games
                                     </span>
 
                                 </div>
 
-                                <div id="descriptionLoginContainer" type="submit" value="submit" name="submit"
-                                    class=" py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
+                                
+                                
+                                <div id="descriptionGameContainer" type="submit" value="submit" name="submit"
+                                class=" py-2 flex flex-col items-start justify-center space-y-2 w-full h-auto
+
+                                ">
+                                    
+                                    <div id="picsAndTitleRace" type="submit" value="submit" name="submit"
+                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
 
                                     ">
 
-                                        <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
-                                        class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                        ">
+                                        <img src="/frontend/src/pics/flag.png" class="w-12 h-12 " alt="Logo" />
 
-                                            <img src="/frontend/src/pics/user.png" class="w-8 h-8  " alt="Logo" />
-
-                                            <span class="
-                                            text-black text-md
-                                            font-secular
-                                            "
-                                            >- Préférences Utilisateur
-                                            </span>
-
-                                        </div>
+                                        <span class="
+                                        text-black text-base
+                                        font-ubuntu
                                         
-                                        <div id="picsAndTitleForm" type="submit" value="submit" name="submit"
-                                        class="flex flex-row items-start justify-start space-x-2 w-full h-auto
-                                        ">
+                                        "
+                                        >Race Game en Java (notions de POO)
+                                        </span>
+                                    </div>
 
-                                            <img src="/frontend/src/pics/editgray.png" class="w-8 h-8 " alt="Logo" />
+                                    <div id="picsAndTitleHangman" type="submit" value="submit" name="submit"
+                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
 
-                                            <span class="
-                                                text-black text-md
-                                                font-secular
-                                                "
-                                                >- Formulaire login
-                                            </span>
+                                    ">
 
-                                        </div>
+                                        <img src="/frontend/src/pics/hangman.png" class="w-12 h-12 " alt="Logo" />
+
+                                        <span class="
+                                        text-black text-base
+                                        font-ubuntu
+                                        "
+                                        >Hangman en Golang
+                                        </span>
 
                                     </div>
 
-                                
-                                
+
+
+                                </div>
                                 
 
                             </button>
                     </a>
 
+                    <a href="/Login" id="LoginContainer" class="
+                    h-auto w-full flex justify-center items-center group hover:border-white 
+                    pb-2 border-b-4 border-gray-600 rounded-b
+                        
+                    ">
 
-                    </ul>     
+                        <button id="loginButton" class="
+                        rounded-lg w-full h-full flex flex-col items-center justify-between
+                        focus:ring-4 focus:outline-none focus:ring-cyan-500 
+                        bg-green-700 opacity-90 grow 
+                        shadow-lg shadow-black group-hover:shadow-sm ">
 
-                </div>
+                            <div id="TechnoLoginContainer" class="
+                            flex
+                            rounded flex-row h-max w-full
+                            items-center space-x-4 py-1 px-4 justify-evenly bg-opacity-30 bg-white
+                            ">
 
-                <div id="numberResults" class="
-                rounded h-auto w-auto
-                px-5
-                text-2xl text-black font-landasans">
-                4 projets ( 1 online) </div>
+                            <img id="javaLogo" src="/frontend/src/pics/Qt_logo_2016.svg.png" class="w-8 h-8">
+                            <img id="sqlLogo" src="/frontend/src/pics/sql-server.png" class="w-8 h-8">
+
+
+                            </div>
+
+                            <div id="picsAndTitleLogin" type="submit" value="submit" name="submit"
+                            class="py-20 px-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
+
+                            ">
+
+                                <img src="/frontend/src/pics/editgray.png" class="w-20 h-20 " alt="Logo" />
+
+                                <span class="
+                                text-black text-6xl
+                                font-secular
+                                
+                                "
+                                >Login
+                                </span>
+
+                            </div>
+
+                            <div id="descriptionLoginContainer" type="submit" value="submit" name="submit"
+                                class=" py-2 pl-2 flex flex-col items-start justify-center space-y-4 w-full h-auto
+
+                                ">
+
+                                    <div id="picsAndTitleUser" type="submit" value="submit" name="submit"
+                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                    ">
+
+                                        <img src="/frontend/src/pics/user.png" class="w-8 h-8  " alt="Logo" />
+
+                                        <span class="
+                                        text-black text-md
+                                        font-secular
+                                        "
+                                        >- Préférences Utilisateur
+                                        </span>
+
+                                    </div>
+                                    
+                                    <div id="picsAndTitleForm" type="submit" value="submit" name="submit"
+                                    class="flex flex-row items-start justify-start space-x-2 w-full h-auto
+                                    ">
+
+                                        <img src="/frontend/src/pics/editgray.png" class="w-8 h-8 " alt="Logo" />
+
+                                        <span class="
+                                            text-black text-md
+                                            font-secular
+                                            "
+                                            >- Formulaire login
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            
+                            
+                            
+
+                        </button>
+                </a>
+
+
+                </ul>     
 
             </div>
 
-            
         </div>
 
     </div>
