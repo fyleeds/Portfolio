@@ -25,3 +25,8 @@ func Groupie(w http.ResponseWriter, r *http.Request) {
 
 	tpl.ExecuteTemplate(w, "DetailGroupie.html", nil)
 }
+
+func CV(w http.ResponseWriter, r *http.Request) {
+
+	tpl.ExecuteTemplate(w, "CV.html", nil)
+}

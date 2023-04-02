@@ -1,59 +1,70 @@
-import { images} from "./pics";
+import { images} from "./pics.js";
 
-var toggleButton = document.querySelectorAll('div[name="projetAlsace"]');
-var toggleButton2 = document.querySelectorAll('div[name="projetGroupie"]');
+var toggleButton = document.querySelector('button[name="buttonLeft"]');
+// console.log(toggleButton)
+var toggleButton2 = document.querySelector('button[name="buttonRight"]');
+
+let imageCurrent = document.getElementById('template');
 
 
-// you click one time
-toggleButton.forEach(button=>{
-    button.addEventListener("click", function() {
+function getNext(images,currentSource){
 
-        
+    for (let i = 0; i < images.length; i++) {
 
-        //display style 1sec
-        AlsaceDetailed.style.display === "flex"? (AlsaceDetailed.style.display = "none",Alsace.style.display = "flex"): (AlsaceDetailed.style.display = "flex",Alsace.style.display = "none");
-        console.log(AlsaceDetailed.style.display=== "flex")
+        if (currentSource == images[i].imageUrl) {
+            
+            if (i + 1 == images.length) {
+                return images[0].imageUrl;           
+            }else{
+                return images[i+1].imageUrl; 
+            }
+        }
+    }
 
-    });
+    // Default value to return if no match is found
+    return null;
+}
+
+function getLast(images,currentSource){
+
+    // console.log(images)
+
+    for (let i = 0; i < images.length; i++) {
+
+        if (currentSource == images[i].imageUrl) {
+            if (i == 0 ) {
+                // console.log("here1")
+                return images[5].imageUrl; 
+            }else{
+                // console.log("here2")
+
+                return images[i-1].imageUrl;
+            }
+        }
+    }
+
+    // Default value to return if no match is found
+    return null;
+}
+
+toggleButton2.addEventListener("click", function() {
+
+    let currentSource ="/" + imageCurrent.src.split('/').slice(3).join('/');
+    imageCurrent.src = getNext(images,currentSource);
+
+
+    
+
 });
 
-// you click one time
-toggleButton2.forEach(button=>{
-    button.addEventListener("click", function() {
+toggleButton.addEventListener("click", function() {
 
-        
+    let currentSource ="/" + imageCurrent.src.split('/').slice(3).join('/');
+    imageCurrent.src = getLast(images,currentSource);
 
-        //display style 1sec
-        GroupieDetailed.style.display === "flex"? (GroupieDetailed.style.display = "none",Groupie.style.display = "flex"): (GroupieDetailed.style.display = "flex",Groupie.style.display = "none");
-        console.log(GroupieDetailed.style.display=== "flex")
 
-    });
-});
+    
 
-// you click one time
-toggleButton3.forEach(button=>{
-    button.addEventListener("click", function() {
-
-        
-
-        //display style 1sec
-        GameDetailed.style.display === "flex"? (GameDetailed.style.display = "none",Game.style.display = "flex"): (GameDetailed.style.display = "flex",Game.style.display = "none");
-        console.log(GameDetailed.style.display=== "flex")
-
-    });
-});
-
-// you click one time
-toggleButton4.forEach(button=>{
-    button.addEventListener("click", function() {
-
-        
-
-        //display style 1sec
-        LoginDetailed.style.display === "flex"? (LoginDetailed.style.display = "none",Login.style.display = "flex"): (LoginDetailed.style.display = "flex",Login.style.display = "none");
-        console.log(LoginDetailed.style.display=== "flex")
-
-    });
 });
 
 

@@ -13,6 +13,7 @@ func main() {
 	http.HandleFunc("/", bk.WelcomeHandler)
 	http.HandleFunc("/Groupie", bk.Groupie)
 	http.HandleFunc("/Login", bk.Login)
+	http.HandleFunc("/CV", bk.CV)
 
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
