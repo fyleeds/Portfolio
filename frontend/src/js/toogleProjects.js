@@ -27,6 +27,12 @@ toggleButton.forEach(button=>{
 
         //display style 1sec
         AlsaceDetailed.style.display === "flex"? (AlsaceDetailed.style.display = "none",Alsace.style.display = "flex"): (AlsaceDetailed.style.display = "flex",Alsace.style.display = "none");
+        if(GroupieDetailed.style.display === "flex"){ GroupieDetailed.style.display = "none";Groupie.style.display = "flex"};
+        if(GameDetailed.style.display === "flex"){GameDetailed.style.display = "none";Game.style.display = "flex"};
+        if (LoginDetailed.style.display === "flex"){LoginDetailed.style.display = "none";Login.style.display = "flex"};
+
+
+
         console.log(AlsaceDetailed.style.display=== "flex")
 
     });
@@ -42,6 +48,11 @@ toggleButton2.forEach(button=>{
         GroupieDetailed.style.display === "flex"? (GroupieDetailed.style.display = "none",Groupie.style.display = "flex"): (GroupieDetailed.style.display = "flex",Groupie.style.display = "none");
         console.log(GroupieDetailed.style.display=== "flex")
 
+        if(AlsaceDetailed.style.display === "flex"){ AlsaceDetailed.style.display = "none";Alsace.style.display = "flex"};
+        if(GameDetailed.style.display === "flex"){GameDetailed.style.display = "none";Game.style.display = "flex"};
+        if (LoginDetailed.style.display === "flex"){LoginDetailed.style.display = "none";Login.style.display = "flex"};
+
+
     });
 });
 
@@ -55,6 +66,11 @@ toggleButton3.forEach(button=>{
         GameDetailed.style.display === "flex"? (GameDetailed.style.display = "none",Game.style.display = "flex"): (GameDetailed.style.display = "flex",Game.style.display = "none");
         console.log(GameDetailed.style.display=== "flex")
 
+        if(GroupieDetailed.style.display === "flex"){ GroupieDetailed.style.display = "none";Groupie.style.display = "flex"};
+        if(AlsaceDetailed.style.display === "flex"){AlsaceDetailed.style.display = "none";Alsace.style.display = "flex"};
+        if (LoginDetailed.style.display === "flex"){LoginDetailed.style.display = "none";Login.style.display = "flex"};
+
+
     });
 });
 
@@ -67,6 +83,11 @@ toggleButton4.forEach(button=>{
         //display style 1sec
         LoginDetailed.style.display === "flex"? (LoginDetailed.style.display = "none",Login.style.display = "flex"): (LoginDetailed.style.display = "flex",Login.style.display = "none");
         console.log(LoginDetailed.style.display=== "flex")
+
+        if(GroupieDetailed.style.display === "flex"){ GroupieDetailed.style.display = "none";Groupie.style.display = "flex"};
+        if(GameDetailed.style.display === "flex"){GameDetailed.style.display = "none";Game.style.display = "flex"};
+        if (AlsaceDetailed.style.display === "flex"){AlsaceDetailed.style.display = "none";Alsace.style.display = "flex"};
+
 
     });
 });

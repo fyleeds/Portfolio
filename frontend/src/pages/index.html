@@ -7,63 +7,49 @@
     <link rel="stylesheet" href="/frontend/src/css/output.css">
 </head>
 
-<body class=" overflow-hidden h-screen bg-title bg-center bg-no-repeat bg-cover bg-opacity-30 ">
+<body class=" overflow-x-hidden max-lg:bg-blue-300 min-[1024px]:bg-title h-full bg-center bg-repeat-y bg-cover bg-opacity-30 ">
 
     <div id="topper" class="
-        bg-white bg-opacity-10 
-            z-10
-            fixed top-0
-            rounded-lg 
-            shadow-xl
-            flex 
-            h-14
-            w-full
-            items-center
-            justify-between 
-            ">
+    bg-white bg-opacity-10 
+    z-10
+    fixed top-0
+    rounded-lg 
+    shadow-xl
+    flex 
+    h-14
+    pr-2
+    w-full
+    items-center
+    justify-between 
+    ">
 
-                <div  id="logoYnovContainer" class="
-                flex flex-row h-auto w-auto items-center justify-center">
-                    <img src="/frontend/src/pics/prj_ynov.jpg" class="
-                    h-8 " alt="Logo" />
-                    
+        <div  id="logoYnovContainer" class="
+        flex flex-row h-auto w-auto items-center justify-center">
+            <img src="/frontend/src/pics/prj_ynov.jpg" class="
+            h-8 " alt="Logo" />
+            
 
-                    <span class="
-                    text-black text-lg 
-                    px-1 font-landasans bg-gray-100 rounded-r-xl"
-                    >1ère année Informatique
-                    </span>
+            <span class="
+            text-black text-lg 
+            px-1 font-landasans bg-gray-100 rounded-r-xl"
+            >1ère année Informatique
+            </span>
 
-                </div>
+        </div>
 
 
-                <a id="logoYnovContainerBottom" href="https://www.linkedin.com/in/cl%C3%A9ment-penot-09326b143/" class="
-                flex flex-row space-x-8 px-2
-                h-full 
-                items-center justify-center 
-                ">
-                    <!-- <span class="
-                    text-white text-3xl hover:bg-opacity-30 hover:bg-white h-full group
-                    font-landasans w-auto flex items-center justify-center px-2 "
-                    ><h1 class="px-2 border-b-2 group-hover:border-gray-500 border-gray-400">Websites</h1>
-                    </span> -->
-
-                    <span class="hover:bg-opacity-30 hover:bg-white h-full flex group items-center justify-center px-2">
-                    <span class="
-                    w-auto flex items-center justify-center py-1 px-2  "
-                    > <img src="/frontend/src/pics/linkedin.png" class=" w-8 h-8">
-                    </span>
-                    </span>
-
-                   
-                </a>
+        <a id="logoYnovContainerBottom" href="https://www.linkedin.com/in/cl%C3%A9ment-penot-09326b143/" class="
+        hover:bg-opacity-30 hover:bg-white h-full
+        w-auto flex items-center justify-center py-1 "
+        > <img src="/frontend/src/pics/linkedin.png" class=" w-8 h-8">
+        </a>
 
     </div>
 
     <div id="sidebarLeft" class="
-    2xl:left-0 2xl:flex 2xl:top-20 2xl:fixed xl:left-0 xl:flex xl:top-20 xl:fixed
-    2xl:flex-col xl:flex-col  space-y-8 sm:hidden lg:hidden xs:hidden md:hidden
-    h-full xl:w-1/6 rounded-r-lg
+    max-lg:hidden 2xl:left-0 2xl:flex 2xl:top-20 lg:fixed lg:left-0 lg:flex lg:top-20 2xl:fixed xl:left-0 xl:flex xl:top-20 xl:fixed
+    2xl:flex-col xl:flex-col lg:flex-col space-y-8
+    h-full xl:w-1/6  lg:w-1/6 rounded-r-lg
     2xl:w-1/6  bg-white bg-opacity-10
     items-center pt-5 px-2
     justify-start"
@@ -72,7 +58,7 @@
         <div id="myContainer" class="bg-gray-100 rounded-xl w-full max-w-5/6
          items-center justify-center flex-col space-y-4 flex">
             <div id="pfp"  class=" h-1/2 w-1/2 flex items-center justify-center  ">
-                <img src="/frontend/src/pics/pfp.jpg" class=" 
+                <img src="/frontend/src/pics/pfp2.jpg" class=" 
                 rounded-full
                 " alt="pfp">
             </div>
@@ -104,7 +90,7 @@
             </div>
         </div>
 
-        <div id="contactsContainer" class="bg-gray-100 w-full max-w-5/6 rounded-xl items-center justify-center flex-col space-y-4 flex">
+        <div id="contactsContainer" class="bg-gray-100 h-max w-full max-w-5/6 rounded-xl items-center justify-center flex-col space-y-4 flex">
 
             <div id="title" class="
             flex flex-col
@@ -116,7 +102,7 @@
                 font-yanice
                 text-2xl 
                 text-center
-                text-black
+                text-gray-900
                 p-2
                 "
                 >Mes Informations</h1>
@@ -125,27 +111,62 @@
 
             <div id="infoContactContainer" class="
             flex flex-col
-            h-auto w-full
+            h-auto w-full rounded-b-xl
             max-w-5/6
-            items-start justify-center
+            items-center justify-center
             ">
+
                 <h1 class="
                 font-secular
                 text-base 
                 text-start
                 text-black
+                "
+                >Email :</h1> 
+
+                <div class="
+                items-center justify-center
+                flex flex-row flex-wrap h-auto
                 p-2
                 "
-                >Email : clem.cmp@hotmail.com</h1>
+                >
+
+
+                    <h1 class="
+                    font-secular
+                    text-sm 
+                    text-start
+                    text-black
+                    "
+                    >clem.cmp</h1>
+
+                    <h1 class="
+                    font-secular
+                    text-sm 
+                    text-start
+                    text-black
+                    "
+                    >@hotmail.com</h1>
+
+                </div>
+
+                <h1 class="
+                font-secular
+                text-base 
+                text-black
+                text-start
+                p-2
+                "
+                >Telephone : </h1>
                 
                 <h1 class="
                 font-secular
-                text-base 
+                text-sm 
                 text-black
                 text-start
                 p-2
                 "
-                >Telephone : 0617831282</h1>
+                >0617831282</h1>
 
             </div>
 
@@ -154,15 +175,14 @@
     </div>
 
     <div id="wrapper" class="
-    sm:w-full lg:w-full xs:w-full md:w-full xl:w-5/6 2xl:w-5/6
-    absolute top-14 right-0 flex flex-col space-y-4 pb-32 justify-start items-center
-    w-5/6  h-full p-5 overflow-auto
+    w-full min-[1024px]:w-5/6
+    absolute top-16 min-[1024px]:right-0 max-lg:left-0 flex flex-col space-y-4 pb-32 justify-start items-center
+    h-full p-5 
     "> 
 
         <div id="sidebarLeft" class="
-        2xl:hidden xl:hidden flex-col flex space-y-2
+        2xl:hidden xl:hidden lg:hidden flex-col flex space-y-2
         h-full w-full
-        bg-white bg-opacity-10 rounded
         items-center pt-5 px-2
         justify-start"
         >
@@ -170,7 +190,7 @@
             <div id="myContainer" class="bg-gray-100 rounded-xl w-full
             items-center justify-center flex-col space-y-4 py-4 flex">
                 <div id="pfp"  class=" h-20 w-20 flex items-center justify-center  ">
-                    <img src="/frontend/src/pics/pfp.jpg" class=" 
+                    <img src="/frontend/src/pics/pfp2.jpg" class=" 
                     rounded-full
                     " alt="pfp">
                 </div>
@@ -202,7 +222,7 @@
                 </div>
             </div>
 
-            <div id="contactsContainer" class="bg-gray-100 w-full rounded-xl items-center justify-center flex-col space-y-4 flex">
+            <div id="contactsContainer" class="bg-gray-100 h-max w-full max-w-5/6 rounded-xl items-center justify-center flex-col space-y-4 flex">
 
                 <div id="title" class="
                 flex flex-col
@@ -214,49 +234,84 @@
                     font-yanice
                     text-2xl 
                     text-center
-                    text-black
+                    text-gray-900
                     p-2
                     "
                     >Mes Informations</h1>
                     
                 </div>
-
+    
                 <div id="infoContactContainer" class="
                 flex flex-col
-                h-auto w-full
+                h-auto w-full rounded-b-xl
                 max-w-5/6
-                items-start justify-center
+                items-center justify-center
                 ">
+    
                     <h1 class="
                     font-secular
                     text-base 
                     text-start
                     text-black
+                    "
+                    >Email :</h1> 
+    
+                    <div class="
+                    items-center justify-center
+                    flex flex-row flex-wrap h-auto
                     p-2
                     "
-                    >Email : clem.cmp@hotmail.com</h1>
+                    >
+    
+    
+                        <h1 class="
+                        font-secular
+                        text-sm 
+                        text-start
+                        text-black
+                        "
+                        >clem.cmp</h1>
+    
+                        <h1 class="
+                        font-secular
+                        text-sm 
+                        text-start
+                        text-black
+                        "
+                        >@hotmail.com</h1>
+    
+                    </div>
+    
+                    <h1 class="
+                    font-secular
+                    text-base 
+                    text-black
+                    text-start
+                    p-2
+                    "
+                    >Telephone : </h1>
                     
                     <h1 class="
                     font-secular
-                    text-base 
+                    text-sm 
                     text-black
                     text-start
                     p-2
                     "
-                    >Telephone : 0617831282</h1>
-
+                    >0617831282</h1>
+    
                 </div>
-
+    
             </div>
             
         </div>
 
         <div id ="projetsContainer" class=" bg-gray-100 shadow-xl flex flex-col justify-start items-center  h-auto w-full rounded-2xl">
 
-            <div id="informationsContainer" class="flex py-1 justify-center items-center border-opacity-50 border-b-4 flex-row w-full">
             <h2 id="projetsTitle" class="
-            h-auto w-auto grow pl-32
-            pb-4 text-center
+            h-auto w-max
+            pb-2 pt-2 text-center
+            border-b-2 border-gray-400
             text-4xl text-gray-900 font-landasans">
             Mes Projets </h2>
 
@@ -266,43 +321,38 @@
             h-auto w-auto self-end
             text-xl text-black font-landasans">
             4 projets ( 1 online) </h4>
-
-            </div>
             
             <div id="gridContainer" class=" pb-20 bg-white w-full flex items-start justify-center pt-12 h-max rounded-b-2xl">
 
-                <ul id="gridInfos" class=" grid sm:grid-cols-1 lg:grid-cols-1 xs:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2
-                gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8 place-items-center
-                h-auto w-5/6 
-                auto-cols-min
+                <ul id="gridInfos" class=" max-lg:flex max-lg:flex-col max-lg:flex-wrap items-center max-lg:justify-center
+                h-auto w-5/6 max-lg:space-y-4 min-[1024px]:grid min-[1024px]:grid-cols-2 min-[1024px]:gap-8 min-[1024px]:place-items-center
                 rounded-lg
-                sm:mx-0
                 
                 ">
                             
                     <div  name="projetAlsace" id="AlsaceContainer" class="
-                    h-auto w-full max-w-sm flex items-center group 
+                    min-[1024px]:h-24 min-[1024px]:max-w-sm w-full max-lg:max-w-full max-lg:h-max flex items-center group 
                     rounded-b
                     ">
 
                         <button id="alsaceButton" class="
-                        focus:ring-4 focus:outline-none focus:ring-black
+                        focus:ring focus:outline-none focus:ring-gray-500
                         w-auto h-full p-2
-                        rounded-lg flex flex-col justify-between items-center
-                        bg-orange-500 opacity-90 grow 
-                        shadow-lg shadow-black group
-                        group-hover:shadow-sm ">
+                        rounded-lg flex flex-col justify-center items-center
+                        bg-gray-300  opacity-90 grow 
+                        shadow-sm shadow-black group
+                        ">
 
                             <div id="picsAndTitleAlsace" type="submit" value="submit" name="submit"
                             class="py-2 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
 
                             ">
-                                <img src="/frontend/src/pics/alsacegray.png" class="w-20 h-20 " alt="Logo" />
+                                <img src="/frontend/src/pics/alsacegray.png" class="min-[1024px]:w-20 min-[1024px]:h-20  max-lg:w-10 max-lg:h-10" alt="Logo" />
                                 
                                 <span class="
-                                text-black group-hover:text-gray-200 text-6xl
+                                text-black group-hover:text-orange-500 
                                 font-goldleaf
-                                
+                                min-[1024px]:text-5xl max-lg:text-3xl
                                 "
                                 >Alsace Forum
                                 </span>
@@ -313,18 +363,18 @@
                     </div>
 
                     <div  name="projetAlsace"id="AlsaceContainerDetailed" class="
-                    hidden h-full h-max-[50%] w-full max-w-sm  flex items-center group 
+                    hidden h-full h-max-[50%] w-full min-[1024px]:max-w-sm max-sm:max-w-full flex items-center group 
                     rounded-b group
                     
                     ">
 
                         <button id="alsaceButton" class="
-                        focus:ring-4 focus:outline-none focus:ring-black
+                        focus:ring focus:outline-none focus:ring-gray-500
                         w-full h-full
                         rounded-lg flex flex-col justify-between items-center
-                        bg-orange-500 opacity-90 grow 
-                        shadow-lg shadow-black
-                        group-hover:shadow-sm ">
+                        bg-gray-300  opacity-90 grow 
+                        shadow-sm shadow-black
+                        ">
 
                             <div id="TechnoAlsaceContainer" class="
                             flex
@@ -344,11 +394,11 @@
                             class="py-20 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
 
                             ">
-                                <img src="/frontend/src/pics/alsacegray.png" class="w-20 h-20 " alt="Logo" />
+                                <img src="/frontend/src/pics/alsacegray.png" class="min-[1024px]:w-20 min-[1024px]:h-16 max-lg:w-10 max-lg:h-10" alt="Logo" />
                                 
                                 <span class="
-                                text-black text-6xl
-                                font-goldleaf group-hover:text-gray-200
+                                text-black min-[1024px]:text-5xl max-lg:text-3xl
+                                font-goldleaf group-hover:text-orange-500
                                 
                                 "
                                 >Alsace Forum
@@ -446,27 +496,27 @@
     
                     
                     <div name="projetGroupie" id="GroupieContainer" class="
-                        h-auto w-full max-w-sm  flex justify-center items-center group 
+                      min-[1024px]:h-24 min-[1024px]:max-w-sm w-full max-lg:max-w-full max-lg:h-max flex justify-center items-center group 
                         rounded-b 
                             
                         ">
 
                             <button id="groupieButton" class="
-                            focus:ring-4 focus:outline-none focus:ring-black
+                            focus:ring focus:outline-none focus:ring-gray-500
                             rounded-lg w-full h-full flex flex-col justify-between items-center
-                            bg-blue-300 grow opacity-90 p-2
-                            shadow-lg shadow-black group-hover:shadow-sm ">
+                            bg-gray-300  grow opacity-90 p-2
+                            shadow-sm shadow-black ">
 
                                 <div id="picsAndTitleGroupie" type="submit" value="submit" name="submit"
                                 class="py-2 flex px-2 flex-row items-center justify-center space-x-4 w-auto h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/song.png" class="w-16 h-16 " alt="Logo" />
+                                    <img src="/frontend/src/pics/song.png" class="min-[1024px]:w-16 min-[1024px]:h-16 max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                     <span class="
-                                    text-black text-6xl
-                                    font-uniser group-hover:text-gray-200
+                                    text-black min-[1024px]:text-5xl max-lg:text-3xl
+                                    font-uniser group-hover:text-blue-300
                                     grow
                                     "
                                     >Groupie Tracker
@@ -477,16 +527,16 @@
                             </button>
                     </div>
                     <div  name="projetGroupie"id="GroupieContainerDetailed" class="
-                        hidden h-full h-max-[50%] w-full max-w-sm flex justify-center items-center group 
+                        hidden h-full h-max-[50%] w-full min-[1024px]:max-w-sm max-lg:max-w-full flex justify-center items-center group 
                         rounded-b 
                             
                         ">
 
                             <button id="groupieButton" class="
-                            focus:ring-4 focus:outline-none focus:ring-black
+                            focus:ring focus:outline-none focus:ring-gray-500
                             rounded-lg w-full h-full flex flex-col justify-evenly items-center
-                            bg-blue-300 grow opacity-90
-                            shadow-lg shadow-black group-hover:shadow-sm ">
+                            bg-gray-300  grow opacity-90
+                            shadow-sm shadow-black ">
 
                                 <div id="TechnoGroupieContainer" class="
                                 flex
@@ -507,11 +557,11 @@
 
                                 ">
 
-                                    <img src="/frontend/src/pics/song.png" class="w-20 h-20 " alt="Logo" />
+                                    <img src="/frontend/src/pics/song.png" class="min-[1024px]:w-16 min-[1024px]:h-16 max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                     <span class="
-                                    text-black text-6xl
-                                    font-uniser group-hover:text-gray-200
+                                    text-black min-[1024px]:text-5xl max-lg:text-3xl
+                                    font-uniser group-hover:text-blue-300
                                     grow
                                     "
                                     >Groupie Tracker
@@ -579,27 +629,26 @@
                     </div>
 
                     <div id="GameContainer" name="projetGame"class="
-                        h-auto w-full max-w-sm  flex justify-center items-center group 
-                        p-2 rounded-b
+                        w-full min-[1024px]:h-24 min-[1024px]:max-w-sm max-lg:max-w-full max-lg:h-max flex justify-center items-center group 
+                        rounded-b
                             
                         ">
 
                             <button id="gameButton" class="
-                            focus:ring-4 focus:outline-none focus:ring-black
-                            rounded-lg w-auto h-full flex flex-col justify-between items-center
-                            bg-blue-900 grow opacity-90
-                            shadow-lg shadow-black group-hover:shadow-sm">
+                            focus:ring focus:outline-none focus:ring-gray-500 rounded-lg h-full flex flex-col justify-between items-center
+                            bg-gray-300 grow opacity-90 w-full
+                            shadow-sm shadow-black ">
 
                                 <div id="picsAndTitleGame" type="submit" value="submit" name="submit"
-                                class="py-2 px-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
+                                class="py-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/game-controller.png" class="w-20 h-20 " alt="Logo" />
+                                    <img src="/frontend/src/pics/game-controller.png" class="min-[1024px]:w-20 min-[1024px]:h-20  max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                     <span class="
-                                    text-black text-6xl
-                                    font-ubuntu group-hover:text-gray-200
+                                    text-black min-[1024px]:text-5xl max-lg:text-2xl
+                                    font-ubuntu group-hover:text-blue-900
                                     
                                     "
                                     >Games
@@ -610,16 +659,16 @@
                             </button>
                     </div>
                     <div id="GameContainerDetailed"name="projetGame" class="
-                       hidden  h-full h-max-[50%] w-full max-w-sm flex justify-center items-center group 
+                       hidden  h-full h-max-[50%] w-full min-[1024px]:max-w-sm max-lg:max-w-full flex justify-center items-center group 
                         pb-2  rounded-b
                             
                         ">
 
                             <button id="gameButton" class="
-                            focus:ring-4 focus:outline-none focus:ring-black
+                            focus:ring focus:outline-none focus:ring-gray-500
                             rounded-lg w-full h-full flex flex-col justify-between items-center
-                            bg-blue-900 grow opacity-90
-                            shadow-lg shadow-black group-hover:shadow-sm">
+                            bg-gray-300  grow opacity-90
+                            shadow-sm shadow-black ">
 
                                 <div id="TechnoGameContainer" class="
                                 flex
@@ -639,11 +688,11 @@
 
                                 ">
 
-                                    <img src="/frontend/src/pics/game-controller.png" class="w-20 h-20 " alt="Logo" />
+                                    <img src="/frontend/src/pics/game-controller.png" class="min-[1024px]:w-16 min-[1024px]:h-16 max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                     <span class="
-                                    text-black text-6xl
-                                    font-ubuntu group-hover:text-gray-200
+                                    text-black min-[1024px]:text-5xl max-lg:text-2xl
+                                    font-ubuntu group-hover:text-blue-900
                                     
                                     "
                                     >Games
@@ -699,27 +748,27 @@
                     </div>
 
                     <div href="/Login"name="projetLogin" id="LoginContainer" class="
-                    h-auto w-full max-w-sm  flex justify-center items-center group  
-                    pb-2 rounded-b 
+                    w-full  min-[1024px]:h-24 min-[1024px]:max-w-sm max-lg:max-w-full max-lg:h-max flex justify-center items-center group  
+                    rounded-b 
                         
                     ">
 
                         <button id="loginButton" class=" p-2
                         rounded-lg w-full h-full flex flex-col items-center justify-between
-                        focus:ring-4 focus:outline-none focus:ring-black 
-                        bg-green-700 opacity-90 grow 
-                        shadow-lg shadow-black group-hover:shadow-sm ">
+                        focus:ring focus:outline-none focus:ring-gray-500
+                        bg-gray-300 opacity-90 grow 
+                        shadow-sm shadow-black ">
 
                             <div id="picsAndTitleLogin" type="submit" value="submit" name="submit"
                             class="py-2 px-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
 
                             ">
 
-                                <img src="/frontend/src/pics/editgray.png" class="w-20 h-20 " alt="Logo" />
+                                <img src="/frontend/src/pics/editgray.png" class="min-[1024px]:w-14 min-[1024px]:h-14  max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                 <span class="
-                                text-black text-6xl
-                                font-secular group-hover:text-gray-200
+                                text-black min-[1024px]:text-5xl max-lg:text-2xl
+                                font-secular group-hover:text-green-700
                                 
                                 "
                                 >Login
@@ -730,17 +779,17 @@
                         </button>
                     </div>
 
-                    <div href="/Login" name="projetLogin"id="LoginContainerDetailed" class="
-                    hidden h-full h-max-[50%] w-full max-w-sm flex justify-center items-center group  
+                    <div href="/Login" name="projetLogin"id="LoginContainerDetailed" class="<
+                    hidden h-full h-max-[50%] w-full min-[1024px]:max-w-sm max-lg:max-w-full flex justify-center items-center group  
                     rounded-b
                         
                     ">
 
                         <button id="loginButton" class="
                         rounded-lg w-full h-full flex flex-col items-center justify-between
-                        focus:ring-4 focus:outline-none focus:ring-black
-                        bg-green-700 opacity-90 grow 
-                        shadow-lg shadow-black group-hover:shadow-sm ">
+                        focus:ring focus:outline-none focus:ring-gray-500
+                        bg-gray-300 opacity-90 grow 
+                        shadow-sm shadow-black">
 
                             <div id="TechnoLoginContainer" class="
                             flex
@@ -759,11 +808,11 @@
 
                             ">
 
-                                <img src="/frontend/src/pics/editgray.png" class="w-20 h-20 " alt="Logo" />
+                                <img src="/frontend/src/pics/editgray.png" class="min-[1024px]:w-16 min-[1024px]:h-16 max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                 <span class="
-                                text-black text-6xl
-                                font-secular group-hover:text-gray-200
+                                text-black min-[1024px]:text-5xl max-lg:text-2xl
+                                font-secular group-hover:text-green-700
                                 
                                 "
                                 >Login
@@ -842,46 +891,55 @@
 
         <div id ="projetsContainer" class=" bg-gray-100 shadow-xl flex flex-col justify-start items-center  h-auto w-full rounded-2xl">
 
-            <div id="informationsContainer" class="flex py-1 justify-center items-center border-opacity-50 border-b-4 flex-row w-full">
-            <h2 id="projetsTitle" class="
-            h-auto w-auto grow
-            pb-4 text-center
-            text-4xl text-gray-900 font-landasans">
-            Plus d'informations</h2>
+            <div class="
+            items-center justify-center space-x-2
+            flex flex-row flex-wrap h-auto
+            p-2 m-4 border-b-2 border-gray-400
+            "
+            >
+                <h2 id="projetsTitle" class="
+                h-auto w-max
+                text-center 
+                text-4xl text-gray-900 font-landasans">
+                Plus</h2>
+
+                <h2 id="projetsTitle" class="
+                h-auto w-max text-center 
+                
+                text-4xl text-gray-900 font-landasans">
+                d'informations</h2>
 
             </div>
-            
+
             <div id="gridContainer" class=" pb-20 bg-white w-full flex items-start justify-center pt-12 h-auto rounded-b-2xl">
 
-                <ul id="gridInfos" class=" grid sm:grid-cols-1 lg:grid-cols-1 xs:grid-cols-1 md:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3
-                gap-4 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 3xl:gap-8 place-items-center
-                h-auto w-5/6
-                auto-cols-min
+                <ul id="gridInfos" class=" max-lg:flex max-lg:flex-col max-lg:flex-wrap items-center max-lg:justify-center
+                min-[1024px]:grid min-[1024px]:grid-cols-3 min-[1024px]:gap-8 min [1024px]:place-items-center
+                h-auto w-5/6 max-lg:space-y-4
                 rounded-lg
-                sm:mx-0
                 
                 ">
                             
                     <a href="/CV" id="cvContainer" class="
-                    h-auto w-full max-w-sm flex items-center group hover:border-white 
+                    w-full min-[1024px]:h-28 min-[1024px]:max-w-sm max-lg:max-w-full max-lg:h-max flex items-center group hover:border-white 
                     rounded-b min-h-[50%]
                     ">
 
                         <button id="alsaceButton" class="
-                        w-auto h-full p-2
+                        w-full h-full p-2
                         rounded-lg flex flex-col justify-between items-center
                         bg-gray-300 opacity-90 grow 
-                        shadow-lg shadow-black group
-                        group-hover:shadow-sm ">
+                        shadow-sm shadow-black group
+                         ">
 
                             <div id="picsAndTitleAlsace" type="submit" value="submit" name="submit"
                             class="py-2 px-2 flex flex-row items-center justify-center space-x-2 w-full h-auto
 
                             ">
-                                <img src="/frontend/src/pics/editgray.png" class="w-20 h-20 " alt="Logo" />
+                                <img src="/frontend/src/pics/editgray.png" class="min-[1024px]:w-20 min-[1024px]:h-20  max-lg:w-10 max-lg:h-10" alt="Logo" />
                                 
                                 <span class="
-                                text-black group-hover:text-blue-900 text-5xl
+                                text-black group-hover:text-gray-700 min-[1024px]:text-5xl max-lg:text-2xl
                                 font-secular
                                 "
                                 >CV
@@ -893,26 +951,26 @@
                     </a>
 
                     <div id="lmContainer" class="
-                        h-full w-full max-w-sm  flex justify-center items-center group hover:border-white 
-                        p-2 rounded-b  min-h-[50%]
+                        w-full min-[1024px]:h-28 min-[1024px]:max-w-sm max-lg:max-w-full max-lg:h-max  flex justify-center items-center group hover:border-white 
+                        rounded-b  min-h-[50%]
                             
                         ">
 
                             <button id="groupieButton" class="
-                            rounded-lg w-full h-full flex flex-col justify-between items-center
+                            rounded-lg w-full h-full flex flex-col justify-center items-center
                             bg-gray-300 grow opacity-90 p-2 
-                            shadow-lg shadow-black group-hover:shadow-sm ">
+                            shadow-sm shadow-black  ">
 
                                 <div id="picsAndTitleGroupie" type="submit" value="submit" name="submit"
-                                class="flex mt-4 px-2 flex-row items-center justify-center space-x-4 w-auto h-auto
+                                class="flex px-2 flex-row items-center justify-center space-x-4 w-auto h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/mail.png" class="w-16 h-16 " alt="Logo" />
+                                    <img src="/frontend/src/pics/mail.png" class="min-[1024px]:w-16 min-[1024px]:h-16 max-lg:w-10 max-lg:h-10 " alt="Logo" />
 
                                     <span class="
-                                    text-black text-5xl
-                                    font-secular  group-hover:text-blue-900
+                                    text-black min-[1024px]:text-5xl max-lg:text-2xl
+                                    font-secular  group-hover:text-gray-700
                                     grow
                                     "
                                     >LM
@@ -924,26 +982,26 @@
                     </div>
 
                     <a href='https://ynov-bordeaux.com/ecole-informatique-ingesup/?cn-reloaded=1' id="programmeEcoleContainer"class="
-                        h-auto w-full max-w-sm  flex justify-center items-center group hover:border-white 
-                        p-2 rounded-b  min-h-[50%]
+                        w-full min-[1024px]:h-28 min-[1024px]:max-w-sm max-lg:max-w-full max-lg:h-max  flex justify-center items-center group hover:border-white 
+                        rounded-b  min-h-[50%]
                             
                         ">
 
                             <button id="gameButton" class="
-                            rounded-lg w-auto h-full flex flex-col justify-between items-center
+                            rounded-lg w-full h-full flex flex-col justify-center items-center
                             bg-gray-300 grow opacity-90 p-2
-                            shadow-lg shadow-black group-hover:shadow-sm">
+                            shadow-sm shadow-black ">
 
                                 <div id="picsAndTitleGame" type="submit" value="submit" name="submit"
                                 class="py-2 px-2 flex flex-row items-center justify-center space-x-4 w-full h-auto
 
                                 ">
 
-                                    <img src="/frontend/src/pics/information-button.png" class="w-12 h-12 " alt="Logo" />
+                                    <img src="/frontend/src/pics/information-button.png" class="min-[1024px]:w-12 min-[1024px]:h-12  max-lg:w-10 max-lg:h-10" alt="Logo" />
 
                                     <span class="
-                                    text-black text-5xl
-                                    font-secular  group-hover:text-blue-900
+                                    text-black min-[1024px]:text-5xl max-lg:text-xl
+                                    font-secular  group-hover:text-gray-700
                                     
                                     "
                                     >Cursus Ecole
